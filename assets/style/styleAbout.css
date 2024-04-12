@@ -59,11 +59,11 @@
   padding: 0 10px;
 }
 .navbar-down {
+  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
   height: max-content;
-  box-shadow: 0 7px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-down .logo-navbar {
@@ -136,102 +136,76 @@
 /* ----------------hero-------------------------- */
 .hero {
   display: flex;
-  flex-direction: column;
   height: max-content;
+  background-color: #59ab6e;
 }
-.hero .contact-us-hero {
-  width: 100%;
-  background-color: #e9eef5;
+.hero .hero-text {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: max-content;
   flex-direction: column;
-  height: max-content;
+  color: white;
+}
+.hero .hero-image {
+  display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+}
+.hero .hero-image img {
+  width: 100%;
+  height: 100%;
   padding: 60px 0;
 }
-.title-contact {
-  padding-bottom: 20px;
-}
-.text-contact,
-.text-contact {
-  width: 50%;
-  line-height: 23px;
-}
-
-.map-conatact-us {
-  width: 100%;
-  background-color: #dddddd;
-  height: 300px;
-}
-
-/*---------------section form-contact ---------------*/
-.form-contact {
+/*---------------section our services ---------------*/
+.our-services {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between;  */
   padding: 50px 0;
   width: 100%;
 }
-.container-form {
+.our-services .title-services,
+.paragraph-services {
+  margin: 0 auto;
+  padding: 7px 0;
+}
+.our-services .paragraph-services {
+  width: 25%;
+  text-align: center;
+  padding-top: 15px;
+}
+.our-services .cards-area-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0;
+}
+.our-services .cards-area-services .card {
   display: flex;
   flex-direction: column;
-  width: 75%; 
-  margin: 0 auto;
-}
-.container-form-input {
-  display: flex;
-  width: 100%;
-}
-.name-input,
-.email-input {
-  margin: 0 10px;
-  width: 50%;
-}
-.name-input input,
-.email-input input {
-  padding: 10px 0px;
-  border: 1px solid rgb(153, 153, 160);
-  width: 100%;
-}
-label {
-  display: block;
-  padding: 10px 10px;
-  color: #525253;
-}
+  width: 200px;
+  height: 200px;
+  margin: 20px 7px;
 
-.subject-input input,
-.message-input textarea {
-  padding: 10px 0;
-  width: 99%;
-  border: 1px solid rgb(153, 153, 160);
-}
-.message-input textarea {
-  padding: 20px 0;
-  width: 99%;
-  margin: 0 auto;
-}
-.form-contact .button-form-contact{
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content:flex-end;
- 
-}
-.form-contact .button-form-contact button{
-  display: flex;
-  width: max-content;
-  align-items: center;
-  justify-content:center;
-  padding: 12px 14px ;
-  background-color: #59aa6b;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-right: 9px;
-  border: 1px solid #59aa6b;
-  border-radius: 5px;
-}
+  justify-content: center;
+  cursor: pointer;
 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.our-services .cards-area-services .card h3 {
+  padding: 10px;
+}
+.our-services .cards-area-services .card i {
+  padding: 10px;
+}
+.our-services .cards-area-services .card:hover {
+  background-color: #f4fff7;
+}
 /*----------------------our brands--------------------*/
 .our-brands {
   display: flex;
@@ -334,12 +308,17 @@ label {
   width: 100%;
   height: 1px;
   background-color: #2d343f;
+  /* margin-top: 10px 0; */
+  /* width: 75%; */
+  /* border: white; */
+  
 }
 
 .footer-part-second {
   background-color: #212934;
   width: 100%;
   display: flex;
+  
 }
 .footer-part-second .footer-icons {
   width: 50%;
@@ -349,6 +328,7 @@ label {
   justify-content: flex-start;
   padding: 20px 0;
   /* background-color: #b1b2b3; */
+  
 }
 .footer-part-second .footer-icons .facebbok-icone,
 .instegram-icone,
@@ -373,7 +353,7 @@ label {
   padding: 20px 0;
 }
 
-.input {
+.input-group .input {
   min-height: 50px;
   max-width: 150px;
   padding: 0 1rem;
@@ -384,7 +364,7 @@ label {
   background-color: transparent;
 }
 
-.button--submit {
+.input-group .button--submit {
   min-height: 50px;
   padding: 0.5em 1em;
   border: none;
