@@ -242,21 +242,28 @@
 
 /*----------------------section feture--------------------*/
 .featured-home{
+    width: 100%;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 50px 0;
     background-color: #e9eef5;
     
 }
 .featured-home .tilte-featured{
-    padding: 10px 0;
+    /* padding: 10px 0; */
     font-size: 40px;
+    color: #2d343f;
 }
 .featured-home .text-featured{
     width: 40%;
     text-align: center;
+    padding: 10px 0;
+    color: #5c5f62;
+    line-height: 20px;
+    margin-bottom: 20px;
 }
 .featured-home .cards-area{
     padding: 0 100px;
@@ -264,7 +271,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .featured-home .cards-area .card{
     display: flex;
@@ -278,6 +285,7 @@
     padding-bottom: 15px ;
     
 }
+
 .featured-home .cards-area .card .img-card{
     width: 100%;
     height: 100%;
@@ -290,10 +298,27 @@
     width:100%;
     height: 100%;
 }
-.featured-home .cards-area .card .img-card .title-card{
+.featured-home .cards-area .card .container-icons-price {
+    display: flex;
+    width: 100%;
+}
+.featured-home .cards-area .card .container-icons-price .icon-star {
+    display: flex;
+    width: 50%;
+}
+.featured-home .cards-area .card .container-icons-price .price{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.featured-home .cards-area .card  .title-card,.text-card,p,.icon-star{
+    padding: 5px 12px;
+}
+.featured-home .cards-area .card .text-card{
     
 }
-.featured-home .cards-area .card .img-card .button-card{
+.featured-home .cards-area .card p{
+    color: #caced4;
     
 }
 
